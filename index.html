@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Showroom</title>
+</head>
+<body>
+  <h1>Car Showroom</h1>
+  <form action="/cars" method="POST" id="carForm" enctype="multipart/form-data">
+    <label for="maker">Maker:</label>
+    <input type="text" id="maker" name="maker"><br>
+
+    <label for="model">Model:</label>
+    <input type="text" id="model" name="model"><br>
+
+    <label for="year">Year:</label>
+    <input type="number" id="year" name="year"><br>
+
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price"><br>
+
+    <label for="image">Image:</label>
+    <input type="file" id="image" name="image"><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <div id="carList"></div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
